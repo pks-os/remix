@@ -573,9 +573,8 @@ This package matches the API of React Router v7's `@react-router/fs-routes`, mak
 
 ```ts filename=app/routes.ts
 import { flatRoutes } from "@remix-run/fs-routes";
-import type { RouteConfig } from "@remix-run/route-config";
 
-export const routes: RouteConfig = flatRoutes();
+export default flatRoutes();
 ```
 
 👉 **If you used the `routes` config option, add `@remix-run/routes-option-adapter` and use it in `routes.ts`**
